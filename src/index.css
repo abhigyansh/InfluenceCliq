@@ -1,0 +1,426 @@
+.navbar-full {
+  width: 100%;
+  max-width: none;
+  padding: 0 20px; 
+}
+
+.hero-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle-text {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons-block a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.button-drim-Green {
+  background-color: #ace4b5;
+}
+
+.button-drim-purple {
+  background-color: rgb(82, 17, 17);
+  border-radius: 2;
+  border-color: #ace4b5;
+}
+
+.hero-img-block {
+  text-align: center;
+}
+
+.rewards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* .drim-reward {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.drim-reward img {
+  width: 120px;
+  height: auto;
+} */
+
+/* main container */
+.infinity-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden; /* स्क्रॉल बार छुपाने के लिए */
+  background-color: #f9f9f9;
+  padding: 5px 0;
+  position: relative;
+}
+
+/* internal div */
+.infinity-line > div {
+  display: flex;
+  animation: scroll 20s linear infinite; /* स्क्रॉलिंग एनिमेशन */
+  width: max-content; /* सामग्री को लाइन में रखने के लिए */
+}
+
+/* brand logo */
+.brand-logo-line {
+  width: 1300px; /* लोगो की चौड़ाई */
+  height: 72px; /* लोगो की ऊँचाई */
+  margin: 0 10px; /* लोगो के बीच गैप */
+  background-size: contain; /* बैकग्राउंड की स्केलिंग */
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0; /* लोगो का आकार फिक्स रखें */
+}
+
+/* Lazy loaded img */
+.lazy-img {
+  display: none; /* इमेज को छुपाया गया क्योंकि बैकग्राउंड-इमेज पहले से है */
+}
+
+/* scrolling animation */
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%); /* सामग्री को बाएं स्क्रॉल करें */
+  }
+}
+
+.image-row-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to the next row */
+  justify-content: space-between; /* Add spacing between images */
+  max-width: 100%;
+  align-items: center; /* Vertically align images */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  gap: 20px; /* Add spacing between items */
+}
+
+.image-row-container img {
+  width: 150px; /* Adjust to fit your needs */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+.event-card {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 350px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.event-close svg {
+  fill: #000;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.event-close:hover svg {
+  transform: rotate(90deg);
+}
+
+.event-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.event-img {
+  width: 100%;
+  height: auto;
+}
+
+.event-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-description {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+/* Card Container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.accordion-swap-img-brands {
+  width: 50%;
+  position: relative;
+}
+
+.accordion-swap-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Accordion Container */
+.drim-accordions-items-brands {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drim-accordion-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.drim-accordion {
+  display: flex;
+  align-items: center;
+}
+
+.drim-accordion svg {
+  margin-right: 10px;
+}
+
+.lead-text-m {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.drim-accordion-dropdown {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.accordion-swap-img-mobile {
+  display: none; /* Hide the mobile image by default */
+}
+
+/* Why Choose Us */
+.why_choose{ 
+  width:100%; 
+  margin: 0 0 50px; 
+  font-family: 'Raleway', sans-serif; 
+}
+.why_choose_head{ 
+  width:100%; 
+  text-align:center; 
+  padding:30px;
+}
+.why_choose_head h1{ 
+  width:100%; 
+  color: #000000; 
+  text-align:center; 
+  font-size:32px; 
+  font-family: 'Raleway-Medium', sans-serif;
+}
+.why_choose_head h1 span{ 
+  border-bottom: 2px solid #ace4b5; 
+}
+.text-down { 
+  position:relative; 
+  overflow:hidden;
+}
+.text-down img{ 
+  width:100%; 
+  height:200px;
+}
+.text-down .textbox { 
+  width:100%; 
+  height:300px; 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  margin-top:-255px;
+  -webkit-border-radius:50px; 
+  -moz-border-radius:50px; 
+  -ms-border-radius:50px; 
+  border-radius:5px;
+  background-color: rgba(172, 228, 181, 0.5); 
+  -webkit-transition: all 0.7s ease; 
+  transition: all 0.7s ease; 
+}
+.text-down:hover .textbox { 
+  margin-top:0;
+  background-color: rgba(172, 228, 181, 0.4);
+}
+.details{ 
+  width:100%; 
+  padding: 30px 30px 0;  
+  text-align:center; 
+  color:rgba(255,255,255,1); 
+  font-size:16px;
+  font-family: 'Raleway-Light', sans-serif; 
+}
+.view-more{ 
+  width:100%; 
+  padding-top:0;  
+  text-align:center; 
+  color:rgba(255,255,255,1); 
+  font-size:20px;
+  font-weight:bold;
+}
+.text { 
+  text-align:center; 
+  padding-top: 70px; 
+  color:rgba(255,255,255,1); 
+  font-size:20px;
+  font-family: 'Raleway-Light', sans-serif; 
+}
+.top { 
+  padding-top:10px;
+}
+
+/* General Styles */
+.drim-numbers {
+  background-color: #ace4b5; /* Matches the blue background */
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.drim-h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Number Box Styling */
+.drim-numbers-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.drim-number-item {
+  flex: 1 1 calc(25% - 20px); /* Ensures 4 boxes per row with spacing */
+  background-color: #ffffff; /* White background for contrast */
+  color: #ace4b5; /* Blue text color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drim-number-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Number Styling */
+.drim-h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.title-drim {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #333333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .drim-numbers-box {
+      flex-direction: column;
+  }
+
+  .drim-number-item {
+      flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .drim-number-item {
+      flex: 1 1 calc(50% - 20px); /* Adjust to 2 boxes per row for medium screens */
+  }
+}
+
+
+
+
+
+
+/* media query */
+
+@media (max-width: 768px) {
+  .brand-logo-line {
+    width: 90px; /* मोबाइल के लिए चौड़ाई कम */
+    height: 54px; /* मोबाइल के लिए ऊँचाई कम */
+    margin: 0 5px; /* गैप कम */
+  }
+}
+
+@media (max-width: 576px) {
+  .event-card {
+    max-width: 95%;
+  }
+
+  .event-description {
+    font-size: 14px;
+  }
+}
+
+/* Show for Mobile */
+@media (max-width: 768px) {
+  .accordion-swap-img-mobile {
+    display: block; /* Show video in mobile */
+  }
+}
