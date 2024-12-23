@@ -402,9 +402,9 @@
 
 @media (max-width: 768px) {
   .brand-logo-line {
-    width: 90px; /* मोबाइल के लिए चौड़ाई कम */
-    height: 54px; /* मोबाइल के लिए ऊँचाई कम */
-    margin: 0 5px; /* गैप कम */
+    width: 90px; 
+    height: 54px; 
+    margin: 0 5px;
   }
 }
 
