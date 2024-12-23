@@ -5,6 +5,9 @@ import Wcu from './Wcu'
 import ForB from './ForB'
 import Exp from './exp'
 import Card from './Card'
+import MyForm from './MyForm'
+import ForInfulencers from './ForInfulencers'
+import MyFormBrands from './MyFormBrands'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,10 +16,13 @@ function App() {
     <>
       <div>
         <Navbar />
-        <Exp />
         {/* <Card /> */}
+        <Exp />
         <Wcu />
         <ForB />
+        <MyForm />
+        <ForInfulencers />
+        <MyFormBrands />
       </div>
     </>
   )

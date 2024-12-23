@@ -75,24 +75,24 @@
 /* internal div */
 .infinity-line > div {
   display: flex;
-  animation: scroll 20s linear infinite; /* स्क्रॉलिंग एनिमेशन */
-  width: max-content; /* सामग्री को लाइन में रखने के लिए */
+  animation: scroll 20s linear infinite; 
+  width: max-content; 
 }
 
 /* brand logo */
 .brand-logo-line {
-  width: 1300px; /* लोगो की चौड़ाई */
-  height: 72px; /* लोगो की ऊँचाई */
-  margin: 0 10px; /* लोगो के बीच गैप */
-  background-size: contain; /* बैकग्राउंड की स्केलिंग */
+  width: 1300px;
+  height: 72px; 
+  margin: 0 10px; 
+  background-size: contain; 
   background-repeat: no-repeat;
   background-position: center;
-  flex-shrink: 0; /* लोगो का आकार फिक्स रखें */
+  flex-shrink: 0; 
 }
 
 /* Lazy loaded img */
 .lazy-img {
-  display: none; /* इमेज को छुपाया गया क्योंकि बैकग्राउंड-इमेज पहले से है */
+  display: none; 
 }
 
 /* scrolling animation */
@@ -186,7 +186,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .accordion-swap-img-brands {
@@ -423,4 +423,26 @@
   .accordion-swap-img-mobile {
     display: block; /* Show video in mobile */
   }
+}
+
+
+
+/* Extra */
+#root{
+  margin: 0 !important;
+  max-width: max-content !important;
+}
+
+.col-lg-6 {
+  width: 50% !important;
+}
+
+.my-card-1{
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  background-color: rgba(172, 228, 181, 0.4) !important;
+}
+.my-card-2{
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }

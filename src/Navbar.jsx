@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div className="container-fluid d-flex p-0justify-content-between">
                 <a className="navbar-brand" href="#"><img src="src/assets/logo.png" alt="logo" className="img-fluid" style={{ width: '50px', height: '50px' }} /></a>
                 <button
